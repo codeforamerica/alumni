@@ -18,6 +18,7 @@ group :assets do
 end
 
 group :test, :development do
+  gem 'ffaker'
   gem 'rspec-rails', '~> 2.0'
   gem 'sqlite3'
 end
@@ -27,6 +28,7 @@ group :test do
   gem 'rb-fsevent', '~> 0.9.2'
   gem 'guard', '~> 1.5.4'
   gem 'guard-rspec', '~> 2.3.1'
+  gem 'shoulda-matchers'
 end
 
 group :production do

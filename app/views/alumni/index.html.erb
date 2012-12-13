@@ -2,4 +2,7 @@
 
 <% @alumni.each do |alumni| %>
   <h2><%= alumni.name %></h2>
+  <% alumni.users.order("last_name DESC").each do |user| %>
+    <p><%= link_to "#{user.first_name} #{user.last_name}", user_path(user) %></p>
+  <% end %>
 <% end %>

@@ -7,3 +7,23 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
 Alumni.create([{name: '2011'}, { name: '2012' }, { name: 'Staff'}])
+puts "#{Alumni.count} alumni rows created"
+
+User.create(:first_name => "Test", :last_name => "User", :email => "user@codeforamerica.org", :password => "p@ssw0rd", :alumni_id => 1)
+puts "Initial user created don't forget to change the password"
+
+if Rails.env.development?
+  require 'ffaker'
+  60.times {
+    User.create(:first_name => Faker::Name.first_name,
+                :last_name => Faker::Name.last_name,
+                :email => Faker::Internet.email,
+                :password => "password",
+                :about => Faker::Lorem.paragraph,
+                :github => Faker::Internet.domain_name,
+                :linkedin => Faker::Internet.domain_name,
+                :twitter => Faker::Internet.domain_name,
+                :alumni_id => Random.rand(3) + 1)
+  }
+  puts "#{User.count} users"
+end
