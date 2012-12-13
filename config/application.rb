@@ -22,6 +22,7 @@ module CfaAlumni
       generate.helper false
       generate.assets false
       generate.view_specs false
+      generate.fixture_replacement :factory_girl
     end
 
     #Use LESS for the stylesheet engine
