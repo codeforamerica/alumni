@@ -1,8 +1,20 @@
-<h1>Alumni</h1>
+<h1>Code for America Alumni</h1>
 
 <% @alumni.each do |alumni| %>
   <h2><%= alumni.name %></h2>
-  <% alumni.users.order("last_name DESC").each do |user| %>
-    <p><%= link_to "#{user.first_name} #{user.last_name}", user_path(user) %></p>
-  <% end %>
+
+  <div class="row-fluid">
+    <% alumni.users.order("last_name ASC").in_groups_of(5, false) do |alumnis| %>
+      <ul class="thumbnails">
+        <% alumnis.each do |user| %>
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/150x150" alt="">
+              <h3><%= link_to "#{user.first_name} #{user.last_name}", user_path(user) %></h3>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
 <% end %>
