@@ -15,8 +15,10 @@ ActiveRecord::Schema.define(:version => 20121213025135) do
 
   create_table "alumnis", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "description"
+    t.string   "image_link"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|

@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
-Alumni.create([{name: '2011 Fellow'}, { name: '2012 Fellow' }, { name: 'Staff'}])
+Alumni.create([{name: '2011 Fellow', description: 'The first fellows'}, { name: '2012 Fellow', description: 'The second fellows' }, { name: 'Staff', description: 'Staff'}])
 puts "#{Alumni.count} alumni rows created"
 
 User.create(:first_name => "Test", :last_name => "User", :email => "user@codeforamerica.org", :password => "p@ssw0rd", :alumni_id => 1)
