@@ -1,3 +1,15 @@
 # Code for America Alumni Site
 
+## Work in Progress
+
+## TODO
+
+* On the home view randomly display 10 alumni
+* On the home view randomly display a story
+* Complete the profile page: about, contact, what they are doing now
+* Events page
+* About page
+* OAuth using github
+* Add interns?
+
 
