@@ -1,13 +1,13 @@
 <h1>Code for America Alumni</h1>
 
 <% @alumni.each do |alumni| %>
-  <h2><%= alumni.name %></h2>
+  <h2><%= pluralize_alumni(alumni.name) %></h2>
 
   <div class="row-fluid">
-    <% alumni.users.order("last_name ASC").in_groups_of(5, false) do |alumnis| %>
+    <% alumni.users.order("last_name ASC").in_groups_of(4, false) do |alumnis| %>
       <ul class="thumbnails">
         <% alumnis.each do |user| %>
-          <li class="span2">
+          <li class="span3">
             <div class="thumbnail">
               <img src="http://placehold.it/150x150" alt="">
               <h3><%= link_to "#{user.first_name} #{user.last_name}", user_path(user) %></h3>

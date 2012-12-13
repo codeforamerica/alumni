@@ -5,8 +5,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :about, :alumni_id, :email, :first_name, :github, :last_name, :linkedin, :password, :password_confirmation,
-    :remember_me, :twitter
+  attr_accessible :about, :accomplishments, :alumni_id, :current, :email, :first_name, :github, :impact,
+    :last_name, :linkedin, :location, :password, :password_confirmation, :remember_me, :twitter
 
   belongs_to :alumni
 

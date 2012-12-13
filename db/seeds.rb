@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
-Alumni.create([{name: '2011'}, { name: '2012' }, { name: 'Staff'}])
+Alumni.create([{name: '2011 Fellow'}, { name: '2012 Fellow' }, { name: 'Staff'}])
 puts "#{Alumni.count} alumni rows created"
 
 User.create(:first_name => "Test", :last_name => "User", :email => "user@codeforamerica.org", :password => "p@ssw0rd", :alumni_id => 1)
@@ -19,11 +19,15 @@ if Rails.env.development?
                 :last_name => Faker::Name.last_name,
                 :email => Faker::Internet.email,
                 :password => "password",
-                :about => Faker::Lorem.paragraph,
+                :about => Faker::Lorem.paragraphs,
                 :github => Faker::Internet.domain_name,
                 :linkedin => Faker::Internet.domain_name,
                 :twitter => Faker::Internet.domain_name,
-                :alumni_id => Random.rand(3) + 1)
+                :alumni_id => Random.rand(3) + 1,
+                :location => Faker::Address.city,
+                :accomplishments => Faker::Lorem.paragraphs,
+                :impact => Faker::Lorem.paragraphs,
+                :current => Faker::Lorem.paragraphs)
   }
   puts "#{User.count} users"
 end

@@ -9,7 +9,11 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :twitter
       t.text :about
       t.integer :alumni_id
+      t.string :location
       t.string :email,              :null => false, :default => ""
+      t.text :accomplishments
+      t.text :impact
+      t.text :current
       t.string :encrypted_password, :null => false, :default => ""
 
       ## Recoverable

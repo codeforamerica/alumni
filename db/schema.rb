@@ -27,7 +27,11 @@ ActiveRecord::Schema.define(:version => 20121213025135) do
     t.string   "twitter"
     t.text     "about"
     t.integer  "alumni_id"
+    t.string   "location"
     t.string   "email",                  :default => "", :null => false
+    t.text     "accomplishments"
+    t.text     "impact"
+    t.text     "current"
     t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
