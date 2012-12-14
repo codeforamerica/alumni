@@ -1,6 +1,6 @@
 CfaAlumni::Application.routes.draw do
 
-  resources :user
+  resources :user, :only => [:show]
 
   match "alumni" => "alumni#index"
   match "alumni/:id" => "alumni#show", :as => "alumni_show"
