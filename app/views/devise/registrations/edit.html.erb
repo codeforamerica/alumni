@@ -6,6 +6,12 @@
       <%= f.error_notification %>
       <fieldset>
         <legend>User Information</legend>
+        <div class="control-group">
+          <div class="controls">
+            <%= gravatar_image_tag(@user.email, :alt => @user.full_name) %>
+            <a id="gravatar_link" class="capitalized-link" href="http://www.gravatar.com/" target="_blank" title="your gravatar is associated with your email address">change picture</a>
+          </div>
+        </div>
         <%= f.input :first_name, :required => true, :autofocus => true %>
         <%= f.input :last_name, :required => true %>
         <%= f.input :email, :required => true %>

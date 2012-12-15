@@ -2,7 +2,7 @@
 <h2><%= @user.alumni.name %></h2>
 <div class="row-fluid">
   <div class="span2">
-    <img src="http://placehold.it/150x150" />
+    <%= gravatar_image_tag(@user.email, :alt => @user.full_name) %>
   </div>
   <div class="span10">
     <p>Current Location &mdash; <%= @user.location %></p>

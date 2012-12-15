@@ -4,6 +4,7 @@ ruby '1.9.3'
 gem 'rails', '3.2.9'
 
 gem 'devise', '~> 2.1.2'
+gem 'gravatar_image_tag'
 gem 'jquery-rails'
 gem 'simple_form', '~> 2.0.4'
 
