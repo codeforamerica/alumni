@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :about, :accomplishments, :alumni_id, :current, :email, :first_name, :github, :impact,
+  attr_accessible :about, :accomplishments, :alumni_id, :approved, :current, :email, :first_name, :github, :impact,
     :last_name, :linkedin, :location, :password, :password_confirmation, :remember_me, :twitter
 
   belongs_to :alumni
@@ -18,6 +18,18 @@ class User < ActiveRecord::Base
 
   def to_param
     "#{id}-#{first_name}-#{last_name}"
+  end
+
+  def active_for_authentication?
+    super && approved?
+  end
+
+  def inactive_message
+    if !approved?
+      :not_approved
+    else
+      super
+    end
   end
 
 end
