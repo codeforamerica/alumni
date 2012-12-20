@@ -1,16 +1,18 @@
-<div class="row-fluid">
-  <h1><%= pluralize_alumni(@alumni.name) %></h1>
-  <p><%= @alumni.description %></p>
-  <% @alumni.users.order("last_name ASC").in_groups_of(4, false) do |alumnis| %>
-    <ul class="thumbnails">
-      <% alumnis.each do |user| %>
-        <li class="span3">
-          <div class="thumbnail">
-            <%= link_to gravatar_image_tag(user.email, :alt => user.full_name), user_path(user) %>
-            <h3><%= link_to "#{user.first_name} #{user.last_name}", user_path(user) %></h3>
-          </div>
-        </li>
-      <% end %>
-    </ul>
-  <% end %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <h1><%= pluralize_alumni(@alumni.name) %></h1>
+    <p><%= @alumni.description %></p>
+    <% @alumni.users.order("last_name ASC").in_groups_of(4, false) do |alumnis| %>
+      <ul class="thumbnails">
+        <% alumnis.each do |user| %>
+          <li class="span3">
+            <div class="thumbnail">
+              <%= link_to gravatar_image_tag(user.email, :alt => user.full_name), user_path(user) %>
+              <h3><%= link_to "#{user.first_name} #{user.last_name}", user_path(user) %></h3>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
 </div>
