@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
-Alumni.create([{name: '2011 Fellow', description: 'The first fellows', image_link: "http://farm7.staticflickr.com/6059/6220324479_92350d5af4_n.jpg"},
-              { name: '2012 Fellow', description: 'The second fellows', image_link: "http://farm8.staticflickr.com/7008/6655622811_d3a0e50d96_n.jpg" },
+Alumni.create([{name: '2011 Fellow', description: 'The first fellows', image_link: "http://farm8.staticflickr.com/7162/6501549385_299a62ba6f.jpg"},
+              { name: '2012 Fellow', description: 'The second fellows', image_link: "http://farm8.staticflickr.com/7166/6655615565_bb7a19f348.jpg" },
               { name: '2013 Fellow', description: 'The third fellows' },
               { name: 'Staff', description: 'Staff'}])
 puts "#{Alumni.count} alumni rows created"
