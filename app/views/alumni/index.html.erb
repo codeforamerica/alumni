@@ -5,7 +5,9 @@
     <div class="span12">
       <% @alumni.each do |alumni| %>
         <h2><%= link_to pluralize_alumni(alumni.name), alumni_show_path(alumni) %></h2>
-        <% unless alumni.image_link.nil? %>
+        <% if alumni.image_link.nil? %>
+          <%= image_tag 'madison.jpg' %>
+        <% else %>
           <%= image_tag alumni.image_link %>
         <% end %>
         <p><%= alumni.description %></p>
