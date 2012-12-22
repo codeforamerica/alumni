@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20121220192622) do
     t.string   "location"
     t.string   "email",                  :default => "",    :null => false
     t.text     "accomplishments"
+    t.text     "favorite_moment"
     t.text     "impact"
     t.text     "current"
     t.string   "encrypted_password",     :default => "",    :null => false

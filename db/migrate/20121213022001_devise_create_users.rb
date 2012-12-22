@@ -12,6 +12,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :location
       t.string :email,              :null => false, :default => ""
       t.text :accomplishments
+      t.text :favorite_moment
       t.text :impact
       t.text :current
       t.string :encrypted_password, :null => false, :default => ""
