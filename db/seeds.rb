@@ -8,8 +8,8 @@
 #
 Alumni.create([{name: '2011 Fellow', description: 'The first fellows', image_link: "http://farm8.staticflickr.com/7162/6501549385_299a62ba6f.jpg"},
               { name: '2012 Fellow', description: 'The second fellows', image_link: "http://farm8.staticflickr.com/7166/6655615565_bb7a19f348.jpg" },
-              { name: '2013 Fellow', description: 'The third fellows' },
-              { name: 'Staff', description: 'Staff'}])
+              { name: '2013 Fellow', description: '' },
+              { name: 'Staff', description: ''}])
 puts "#{Alumni.count} alumni rows created"
 
 #2011 Fellows
