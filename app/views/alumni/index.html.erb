@@ -8,7 +8,7 @@
         <% if alumni.image_link.nil? %>
           <%= image_tag 'madison.jpg' %>
         <% else %>
-          <%= image_tag alumni.image_link %>
+          <%= link_to image_tag(alumni.image_link), alumni_show_path(alumni) %>
         <% end %>
         <p><%= alumni.description %></p>
         <% end %>
