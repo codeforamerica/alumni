@@ -4,11 +4,10 @@
 
 ## TODO
 
-* On the home view randomly display 10 alumni
-* On the home view randomly display a story
-* Complete the profile page: about, contact, what they are doing now
-* Events page
+* Add a stories model for Alumni to submit stories
+* On the home view randomly display a few stories
 * About page
+* Add News / Announcements
 * OAuth using github
 * Add interns?
 
