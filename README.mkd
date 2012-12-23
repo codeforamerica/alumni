@@ -8,6 +8,7 @@
 * On the home view randomly display a few stories
 * About page
 * Add News / Announcements
+* Add an activity model when logged in can see other users updates
 * OAuth using github
 * Add interns?
 

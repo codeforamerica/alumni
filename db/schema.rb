@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20121223060614) do
     t.text     "favorite_moment"
     t.text     "impact"
     t.text     "current"
+    t.boolean  "admin"
     t.string   "encrypted_password",     :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"

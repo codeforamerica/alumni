@@ -15,6 +15,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.text :favorite_moment
       t.text :impact
       t.text :current
+      t.boolean :admin
       t.string :encrypted_password, :null => false, :default => ""
 
       ## Recoverable

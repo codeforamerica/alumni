@@ -3,6 +3,7 @@ ruby '1.9.3'
 
 gem 'rails', '3.2.9'
 
+gem 'cancan'
 gem 'devise', '~> 2.1.2'
 gem 'gravatar_image_tag'
 gem 'jquery-rails'
