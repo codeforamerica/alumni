@@ -4,5 +4,6 @@ FactoryGirl.define do
     last_name "Last"
     password "password"
     email "test@example.com"
+    approved true
   end
 end

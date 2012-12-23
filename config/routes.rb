@@ -1,5 +1,8 @@
 CfaAlumni::Application.routes.draw do
 
+  resources :events
+
+
   resources :user, :only => [:show]
 
   match "alumni" => "alumni#index"

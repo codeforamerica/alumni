@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
+      <h1>Alumni Events</h1>
+
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Event date</th>
+          <th>Location</th>
+        </tr>
+
+      <% @events.each do |event| %>
+        <tr>
+          <td><%= link_to event.name, event %></td>
+          <td><%= event.event_date %></td>
+          <td><%= event.location %></td>
+        </tr>
+      <% end %>
+      </table>
+
+      <br />
+
+      <% if user_signed_in? %>
+        <%= link_to 'New Event', new_event_path %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -48,7 +48,7 @@
           <div class="container-fluid nav-collapse">
             <ul class="nav pull-right">
               <li><%= link_to "Alumni", alumni_path  %></li>
-              <li><%= link_to "Events", "#"  %></li>
+              <li><%= link_to "Events", events_path  %></li>
               <% unless user_signed_in? %>
                 <li><%= link_to 'Register', new_user_registration_path %></li>
               <% end %>

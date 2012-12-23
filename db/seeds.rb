@@ -64,3 +64,10 @@ User.create(:first_name => "Emily", :last_name => "Wright", :email => "emily@cod
 User.create(:first_name => "Alex", :last_name => "Yule", :email => "alexy@codeforamerica.org", :password => Devise.friendly_token.first(6), :alumni_id => 2, :approved => true)
 puts "#{Alumni.find(2).users.count} 2012 Fellows created"
 
+if Rails.env.development?
+  #Seed the database with fake event data
+  25.times {
+    Event.create(:name => Faker::Company.catch_phrase, :location => Faker::Address.city, :description => Faker::Lorem.paragraph)
+  }
+end
+

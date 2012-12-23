@@ -6,13 +6,6 @@ describe UserController do
     @user = FactoryGirl.create(:user)
   end
 
-  describe "GET 'index'" do
-    it "returns http success" do
-      get 'index'
-      response.should be_success
-    end
-  end
-
   describe "GET 'show'" do
     it "returns http success" do
       get 'show', :id => @user
