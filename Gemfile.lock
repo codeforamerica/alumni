@@ -233,6 +233,6 @@ DEPENDENCIES
   shoulda-matchers
   simple_form (~> 2.0.4)
   sqlite3
-  therubyracer
+  therubyracer (~> 0.11.0beta8)
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
