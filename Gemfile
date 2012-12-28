@@ -7,6 +7,7 @@ gem 'cancan'
 gem 'devise', '~> 2.1.2'
 gem 'gravatar_image_tag'
 gem 'jquery-rails'
+gem 'newrelic_rpm'
 gem 'rails_admin'
 gem 'simple_form', '~> 2.0.4'
 
