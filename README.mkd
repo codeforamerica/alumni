@@ -1,9 +1,33 @@
 # Code for America Alumni Site
 
-## Work in Progress
+## About
+The Code for America Alumni Network site.  A Ruby on Rails application used to connect the Code for America Alumni.
+
+## Demo
+You can see a running version of the application at
+[http://alumni.codeforamerica.org/][demo].
+
+[demo]: http://alumni.codeforamerica.org/
+
+
+## Requirements
+* Make sure the machine that you're using has Ruby 1.9.3 isntalled.  We recommend using [rbenv](https://github.com/sstephenson/rbenv/) for Ruby version management.
+* The latest version of "bundler" installed which can be installed by running `$ gem install bundler`
+
+## Installation
+    git clone git://github.com/codeforamerica/alumni.git
+    cd alumni
+    bundle install
+    rake db:migrate
+
+    rake db:seed #seeds the database
+
+## Usage
+    rails server
+
 
 ## TODO
-
+Some TODO list items:
 * Add a stories model for Alumni to submit stories
 * On the home view randomly display a few stories
 * About page
@@ -11,5 +35,19 @@
 * Add an activity model when logged in can see other users updates
 * OAuth using github
 * Add interns?
+
+
+## Contributing
+See the [contributing](https://github.com/codeforamerica/alumni/blob/master/contributing.mkd) section for ways to contribute to this project.
+
+## Copyright
+Copyright (c) 2012 Code for America. See [LICENSE][] for details.
+
+[license]: https://github.com/codeforamerica/alumni/blob/master/LICENSE.mkd
+
+[![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/alumni.png)][tracker]
+
+[tracker]: http://stats.codeforamerica.org/projects/alumni
+
 
 
