@@ -1,4 +1,6 @@
 # Code for America Alumni Site
+[![Build Status](https://secure.travis-ci.org/codeforamerica/alumni.png?branch=master)][travis]
+[travis]: http://travis-ci.org/codeforamerica/alumni
 
 ## About
 The Code for America Alumni Network site.  A Ruby on Rails application used to connect the Code for America Alumni.
