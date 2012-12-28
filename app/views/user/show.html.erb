@@ -37,9 +37,9 @@
   <div class="row-fluid">
     <h2>Contact</h2>
     <div class="span12">
-      <p><i class="icon-github"></i>&nbsp;<%= link_to @user.github, @user.github, :target => "_blank"  %></p>
-      <p><i class="icon-twitter"></i>&nbsp;<%= link_to "#{@user.twitter}", "http://twitter.com/#{@user.twitter.gsub('@', '')}", :target => "_blank" %></p>
-      <p><i class="icon-linkedin"></i>&nbsp;<%= link_to @user.linkedin, @user.linkedin, :target => "_blank" %></p>
+      <p><i class="icon-github"></i>&nbsp;<%= @user.github.nil? ?  "" :  link_to(@user.github, @user.github, :target => "_blank")  %></p>
+      <p><i class="icon-twitter"></i>&nbsp;<%= @user.twitter.nil? ? "" : link_to("#{@user.twitter}", twitter_link(@user.twitter), :target => "_blank") %></p>
+      <p><i class="icon-linkedin"></i>&nbsp;<%= @user.linkedin.nil? ? "" : link_to(@user.linkedin, @user.linkedin, :target => "_blank") %></p>
     </div>
   </div>
   <p class="muted">Last update: <%= @user.updated_at.strftime('%m/%d/%Y') %></p>
