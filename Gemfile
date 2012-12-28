@@ -32,6 +32,7 @@ group :test do
   gem 'guard', '~> 1.5.4'
   gem 'guard-rspec', '~> 2.3.1'
   gem 'shoulda-matchers'
+  gem 'simplecov', :require => false
 end
 
 group :production do

@@ -185,6 +185,10 @@ GEM
     simple_form (2.0.4)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
     slop (3.3.3)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -232,6 +236,7 @@ DEPENDENCIES
   rspec-rails (~> 2.0)
   shoulda-matchers
   simple_form (~> 2.0.4)
+  simplecov
   sqlite3
   therubyracer (~> 0.10.2)
   twitter-bootstrap-rails
