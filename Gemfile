@@ -14,7 +14,7 @@ gem 'simple_form', '~> 2.0.4'
 # in production environments by default.
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'therubyracer', '~> 0.11.0beta8', :require => 'v8'
+  gem 'therubyracer', '~> 0.10.2', :require => 'v8'
   gem 'uglifier', '>= 1.0.3'
   gem 'less-rails'
   gem 'twitter-bootstrap-rails'
