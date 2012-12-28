@@ -1,6 +1,6 @@
 class AlumniController < ApplicationController
   def index
-    @alumni = Alumni.all
+    @alumni = Alumni.order("name ASC")
   end
 
   def show
