@@ -1,5 +1,5 @@
 before_install: gem install bundler --pre
-before_script: bundle exec rake db:migrate
+before_script: bundle exec rake db:create db:schema:load
 bundler_args: --without assets:development:production
 language: ruby
 rvm:
