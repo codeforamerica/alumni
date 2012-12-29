@@ -3,7 +3,9 @@ FactoryGirl.define do
     first_name "First"
     last_name "Last"
     password "password"
-    email "test@example.com"
+    sequence :email do |n|
+      "person#{n}@example.com"
+    end
     approved true
   end
 end
