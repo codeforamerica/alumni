@@ -1,5 +1,5 @@
 # Code for America Alumni Site
-[![Build Status](https://secure.travis-ci.org/codeforamerica/alumni.png?branch=master)][travis]
+[![Build Status](https://secure.travis-ci.org/codeforamerica/alumni.png)][travis]
 [travis]: http://travis-ci.org/codeforamerica/alumni
 
 ## About
