@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
   end
 
   def to_param
-    "#{id}-#{first_name}-#{last_name}"
+    "#{id}-#{full_name.parameterize}"
   end
 
   def active_for_authentication?
