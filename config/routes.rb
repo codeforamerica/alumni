@@ -14,9 +14,6 @@ CfaAlumni::Application.routes.draw do
 
   match '/error/:code' => 'error#show_error', :as => :errors
 
-  # catch all for 404 handling
-  match "*other", :to => "error#show_error", :code => 404
-
   root :to => 'home#index'
 
 end
