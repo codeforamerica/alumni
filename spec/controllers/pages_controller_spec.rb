@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe HighVoltage::PagesController, '#show' do
-  %w(about).each do |page|
+  %w(about giving).each do |page|
     context 'on GET to /p/#{page}' do
       before do
         get :show, :id => page

@@ -43,6 +43,7 @@
             <ul class="nav pull-right">
               <li><%= link_to "About", page_path("about") %></li>
               <li><%= link_to "Alumni", alumni_path  %></li>
+              <li><%= link_to "Give Back", page_path("giving") %></li>
               <li><%= link_to "Events", events_path  %></li>
               <% unless user_signed_in? %>
                 <li><%= link_to 'Register', new_user_registration_path %></li>
@@ -74,7 +75,9 @@
         <%= image_tag 'cfa_footer_logo.png' %>
         <div class="pull-right">
           <%= link_to 'Home', root_path %> |
+          <%= link_to 'About', page_path("about") %> |
           <%= link_to 'Alumni', alumni_path %> |
+          <%= link_to 'Give Back', page_path("giving") %> |
           <%= link_to 'Events', events_path %> |
           <%= link_to 'Code for America', 'http://www.codeforamerica.org' %>
         </div>
